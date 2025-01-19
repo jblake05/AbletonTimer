@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Jeff\Desktop\Audio Programming\AbletonTimer\source\at_processor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Jeff\Desktop\Audio Programming\AbletonTimer\source\at_controller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Jeff\Desktop\Audio Programming\AbletonTimer\source\at_entry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Jeff\Documents\VST_SDK\vst3sdk\public.sdk\source\main\dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Jeff\Desktop\Audio Programming\AbletonTimer\source\version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Jeff\Desktop\Audio Programming\AbletonTimer\source\at_cids.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Jeff\Desktop\Audio Programming\AbletonTimer\source\at_processor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Jeff\Desktop\Audio Programming\AbletonTimer\source\at_controller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Jeff\Desktop\Audio Programming\AbletonTimer\resource\at_editor.uidesc" />
+    <CustomBuild Include="C:\Users\Jeff\Desktop\Audio Programming\AbletonTimer\resource\CF46E75DDC565AC7B796F7CFAA931D10_snapshot.png">
+      <Filter>Resources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Jeff\Desktop\Audio Programming\AbletonTimer\resource\CF46E75DDC565AC7B796F7CFAA931D10_snapshot_2.0x.png">
+      <Filter>Resources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Jeff\Desktop\Audio Programming\AbletonTimer\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\Jeff\Desktop\Audio Programming\AbletonTimer\resource\win32resource.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{8E1823D9-89DF-3B14-BC5A-70346DD91FD3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{AA6C7E2C-8850-3E2E-92FB-1B3081D01E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{26FC038A-D3EC-3398-9832-B699C2DFF0C0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

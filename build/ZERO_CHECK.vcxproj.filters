@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Jeff\Desktop\Audio Programming\AbletonTimer\build\CMakeFiles\9e2f77582b6092f75e9209e1ba903cb0\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B30D5A6C-ED42-3FCB-9735-2771BAE0AF2F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
