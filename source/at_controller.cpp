@@ -65,6 +65,31 @@ tresult PLUGIN_API AbletonTimerController::getState (IBStream* state)
 	return kResultTrue;
 }
 
+struct time {
+	int hours;
+	int minutes;
+	int seconds;
+};
+
+static struct time timeFromSeconds(float seconds) {
+	float input = seconds;
+
+	int hrs = (int) (input / 3600);
+	input = fmod(input, 3600);
+
+	int mins = (int)(input / 60);
+	input = fmod(input, 60);
+
+	int secs = (int) input;
+
+	struct time result = {
+		hrs,
+		mins,
+		secs
+	};
+	return result;
+}
+
 //------------------------------------------------------------------------
 IPlugView* PLUGIN_API AbletonTimerController::createView (FIDString name)
 {
