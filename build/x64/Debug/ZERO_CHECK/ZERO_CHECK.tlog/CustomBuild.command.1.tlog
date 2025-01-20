@@ -1,0 +1,10 @@
+^C:\USERS\JEFF\DESKTOP\AUDIO PROGRAMMING\ABLETONTIMER\BUILD\CMAKEFILES\9E2F77582B6092F75E9209E1BA903CB0\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Jeff/Desktop/Audio Programming/AbletonTimer" "-BC:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/build/AbletonTimer.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

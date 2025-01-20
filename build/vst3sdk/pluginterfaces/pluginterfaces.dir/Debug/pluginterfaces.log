@@ -1,0 +1,6 @@
+﻿  Building Custom Rule C:/Users/Jeff/Documents/VST_SDK/vst3sdk/pluginterfaces/CMakeLists.txt
+  conststringtable.cpp
+  coreiids.cpp
+  funknown.cpp
+  ustring.cpp
+  pluginterfaces.vcxproj -> C:\Users\Jeff\Desktop\Audio Programming\AbletonTimer\build\lib\Debug\pluginterfaces.lib

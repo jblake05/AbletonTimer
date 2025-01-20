@@ -92,7 +92,8 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PreBuildEvent>
-      <Message></Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/build/VST3/Debug/AbletonTimer.vst3/Contents/Resources"
 if %errorlevel% neq 0 goto :cmEnd
@@ -104,71 +105,8 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Message>[SMTG] Copy PlugIn.ico and desktop.ini and change their attributes.			</Message>
-      <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/Jeff/Documents/VST_SDK/vst3sdk/cmake/modules/../templates/VST_Logo_Steinberg.ico "C:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/build/VST3/Debug/AbletonTimer.vst3/PlugIn.ico"
-if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/Jeff/Documents/VST_SDK/vst3sdk/cmake/modules/../templates/desktop.ini.in "C:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/build/VST3/Debug/AbletonTimer.vst3/desktop.ini"
-if %errorlevel% neq 0 goto :cmEnd
-attrib +s "C:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/build/VST3/Debug/AbletonTimer.vst3/desktop.ini"
-if %errorlevel% neq 0 goto :cmEnd
-attrib +s "C:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/build/VST3/Debug/AbletonTimer.vst3/PlugIn.ico"
-if %errorlevel% neq 0 goto :cmEnd
-attrib +s "C:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/build/VST3/Debug/AbletonTimer.vst3"
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd
-setlocal
-cd "C:\Users\Jeff\Desktop\Audio Programming\AbletonTimer\build\bin"
-if %errorlevel% neq 0 goto :cmEnd
-C:
-if %errorlevel% neq 0 goto :cmEnd
-"C:\Users\Jeff\Desktop\Audio Programming\AbletonTimer\build\bin\Debug\moduleinfotool.exe" -create -version 1.0.0.0 -path "C:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/build/VST3/Debug/AbletonTimer.vst3" -output "C:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/build/VST3/Debug/AbletonTimer.vst3/Contents/Resources/moduleinfo.json"
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd
-setlocal
-cd "C:\Users\Jeff\Desktop\Audio Programming\AbletonTimer\build\bin"
-if %errorlevel% neq 0 goto :cmEnd
-C:
-if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E echo [SMTG] Validator started...
-if %errorlevel% neq 0 goto :cmEnd
-"C:\Users\Jeff\Desktop\Audio Programming\AbletonTimer\build\bin\Debug\validator.exe" "C:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/build/VST3/Debug/AbletonTimer.vst3/Contents/x86_64-win/AbletonTimer.vst3"
-if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E echo [SMTG] Validator finished.
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd
-setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E echo [SMTG] Delete previous link...
-if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -rf C:/Users/Jeff/AppData/Local/Programs/Common/VST3/AbletonTimer.vst3
-if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E echo [SMTG] Creation of the new link...
-if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E create_symlink "C:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/build/VST3/Debug/AbletonTimer.vst3"  C:/Users/Jeff/AppData/Local/Programs/Common/VST3/AbletonTimer.vst3
-if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E echo [SMTG] Finished.
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Message>Copies storage file to VST dir</Message>
+      <Command>xcopy /y "$(ProjectDir)time.txt" "$(outDir)"</Command>
     </PostBuildEvent>
     <Link>
       <AdditionalDependencies>lib\Debug\vstgui_support.lib;lib\Debug\sdk.lib;lib\Debug\vstgui.lib;lib\Debug\vstgui_uidescription.lib;lib\Debug\sdk_common.lib;lib\Debug\base.lib;lib\Debug\pluginterfaces.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
@@ -222,7 +160,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PreBuildEvent>
-      <Message></Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/build/VST3/Release/AbletonTimer.vst3/Contents/Resources"
 if %errorlevel% neq 0 goto :cmEnd
@@ -501,6 +440,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{29D237D2-FD74-3C16-989A-6381158AED31}</Project>
       <Name>vstgui_uidescription</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\source\time.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

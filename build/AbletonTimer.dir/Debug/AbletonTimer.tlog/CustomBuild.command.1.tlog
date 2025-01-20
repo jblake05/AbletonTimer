@@ -1,0 +1,46 @@
+^C:\USERS\JEFF\DESKTOP\AUDIO PROGRAMMING\ABLETONTIMER\RESOURCE\AT_EDITOR.UIDESC
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/resource/at_editor.uidesc" "C:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/build/VST3/Debug/AbletonTimer.vst3/Contents/Resources/at_editor.uidesc"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "[SMTG] Copied C:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/resource/at_editor.uidesc to C:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/build/VST3/Debug/AbletonTimer.vst3/Contents/Resources/at_editor.uidesc"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\JEFF\DESKTOP\AUDIO PROGRAMMING\ABLETONTIMER\RESOURCE\CF46E75DDC565AC7B796F7CFAA931D10_SNAPSHOT.PNG
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/resource/CF46E75DDC565AC7B796F7CFAA931D10_snapshot.png" "C:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/build/VST3/Debug/AbletonTimer.vst3/Contents/Resources/Snapshots/CF46E75DDC565AC7B796F7CFAA931D10_snapshot.png"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "[SMTG] Copied C:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/resource/CF46E75DDC565AC7B796F7CFAA931D10_snapshot.png to C:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/build/VST3/Debug/AbletonTimer.vst3/Contents/Resources/Snapshots/CF46E75DDC565AC7B796F7CFAA931D10_snapshot.png"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\JEFF\DESKTOP\AUDIO PROGRAMMING\ABLETONTIMER\RESOURCE\CF46E75DDC565AC7B796F7CFAA931D10_SNAPSHOT_2.0X.PNG
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/resource/CF46E75DDC565AC7B796F7CFAA931D10_snapshot_2.0x.png" "C:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/build/VST3/Debug/AbletonTimer.vst3/Contents/Resources/Snapshots/CF46E75DDC565AC7B796F7CFAA931D10_snapshot_2.0x.png"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "[SMTG] Copied C:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/resource/CF46E75DDC565AC7B796F7CFAA931D10_snapshot_2.0x.png to C:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/build/VST3/Debug/AbletonTimer.vst3/Contents/Resources/Snapshots/CF46E75DDC565AC7B796F7CFAA931D10_snapshot_2.0x.png"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\JEFF\DESKTOP\AUDIO PROGRAMMING\ABLETONTIMER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Jeff/Desktop/Audio Programming/AbletonTimer" "-BC:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/build" --check-stamp-file "C:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,10 @@
+^C:\USERS\JEFF\DOCUMENTS\VST_SDK\VST3SDK\PLUGINTERFACES\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Jeff/Desktop/Audio Programming/AbletonTimer" "-BC:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/build" --check-stamp-file "C:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/build/vst3sdk/pluginterfaces/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

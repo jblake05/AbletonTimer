@@ -1,0 +1,11 @@
+﻿  Building Custom Rule C:/Users/Jeff/Documents/VST_SDK/vst3sdk/public.sdk/CMakeLists.txt
+  commoniids.cpp
+  commonstringconvert.cpp
+  openurl.cpp
+  systemclipboard_linux.cpp
+  systemclipboard_win32.cpp
+  threadchecker_linux.cpp
+  threadchecker_win32.cpp
+  readfile.cpp
+  vstpresetfile.cpp
+  sdk_common.vcxproj -> C:\Users\Jeff\Desktop\Audio Programming\AbletonTimer\build\lib\Debug\sdk_common.lib

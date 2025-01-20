@@ -1,12 +1,52 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Jeff\\Desktop\\Audio Programming\\AbletonTimer\\build\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{19F33D15-9BC7-3D17-9853-D60DD3CDCC56}|AbletonTimer.vcxproj|C:\\Users\\Jeff\\Desktop\\Audio Programming\\AbletonTimer\\source\\at_controller.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19F33D15-9BC7-3D17-9853-D60DD3CDCC56}|AbletonTimer.vcxproj|C:\\Users\\Jeff\\Desktop\\Audio Programming\\AbletonTimer\\source\\at_processor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "at_processor.cpp",
+              "DocumentMoniker": "C:\\Users\\Jeff\\Desktop\\Audio Programming\\AbletonTimer\\source\\at_processor.cpp",
+              "RelativeDocumentMoniker": "..\\source\\at_processor.cpp",
+              "ToolTip": "C:\\Users\\Jeff\\Desktop\\Audio Programming\\AbletonTimer\\source\\at_processor.cpp",
+              "RelativeToolTip": "..\\source\\at_processor.cpp",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAEcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-19T05:03:11.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "at_controller.cpp",
+              "DocumentMoniker": "C:\\Users\\Jeff\\Desktop\\Audio Programming\\AbletonTimer\\source\\at_controller.cpp",
+              "RelativeDocumentMoniker": "..\\source\\at_controller.cpp",
+              "ToolTip": "C:\\Users\\Jeff\\Desktop\\Audio Programming\\AbletonTimer\\source\\at_controller.cpp",
+              "RelativeToolTip": "..\\source\\at_controller.cpp",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-19T05:03:04.25Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

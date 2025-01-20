@@ -14,10 +14,14 @@ namespace MyCompanyName {
 //------------------------------------------------------------------------
 // AbletonTimerProcessor
 //------------------------------------------------------------------------
+
+int srate;
+
 AbletonTimerProcessor::AbletonTimerProcessor ()
 {
 	//--- set the wanted controller for our processor
 	setControllerClass (kAbletonTimerControllerUID);
+	srate = this->processSetup.sampleRate;
 }
 
 //------------------------------------------------------------------------
@@ -66,73 +70,16 @@ tresult PLUGIN_API AbletonTimerProcessor::setActive (TBool state)
 //------------------------------------------------------------------------
 tresult PLUGIN_API AbletonTimerProcessor::process (Vst::ProcessData& data)
 {
-	//--- First : Read inputs parameter changes-----------
+	// read file:
 
-	/*if (data.inputParameterChanges)
-	{
-		int32 numParamsChanged = data.inputParameterChanges->getParameterCount ();
-		for (int32 index = 0; index < numParamsChanged; index++)
-		{
-			if (auto* paramQueue = data.inputParameterChanges->getParameterData (index))
-			{
-				Vst::ParamValue value;
-				int32 sampleOffset;
-				int32 numPoints = paramQueue->getPointCount ();
-				switch (paramQueue->getParameterId ())
-				{
-				}
-			}
-		}
-	}*/
-	
-	//--- Here you have to implement your processing
+	// add data.numSamples/sampleRate to fracSeconds:
 
-	if (data.numSamples > 0)
-	{
-		//--- ------------------------------------------
-		// here as example a default implementation where we try to copy the inputs to the outputs:
-		// if less input than outputs then clear outputs
-		//--- ------------------------------------------
+	// modulos/remainders:
+
+	// write file:
+	/*for (int s = 0; s < data.numSamples; s++) {
 		
-		int32 minBus = std::min (data.numInputs, data.numOutputs);
-		for (int32 i = 0; i < minBus; i++)
-		{
-			int32 minChan = std::min (data.inputs[i].numChannels, data.outputs[i].numChannels);
-			for (int32 c = 0; c < minChan; c++)
-			{
-				// do not need to be copied if the buffers are the same
-				if (data.outputs[i].channelBuffers32[c] != data.inputs[i].channelBuffers32[c])
-				{
-					memcpy (data.outputs[i].channelBuffers32[c], data.inputs[i].channelBuffers32[c],
-							data.numSamples * sizeof (Vst::Sample32));
-				}
-			}
-			data.outputs[i].silenceFlags = data.inputs[i].silenceFlags;
-				
-			// clear the remaining output buffers
-			for (int32 c = minChan; c < data.outputs[i].numChannels; c++)
-			{
-				// clear output buffers
-				memset (data.outputs[i].channelBuffers32[c], 0,
-						data.numSamples * sizeof (Vst::Sample32));
-
-				// inform the host that this channel is silent
-				data.outputs[i].silenceFlags |= ((uint64)1 << c);
-			}
-		}
-		// clear the remaining output buffers
-		for (int32 i = minBus; i < data.numOutputs; i++)
-		{
-			// clear output buffers
-			for (int32 c = 0; c < data.outputs[i].numChannels; c++)
-			{
-				memset (data.outputs[i].channelBuffers32[c], 0,
-						data.numSamples * sizeof (Vst::Sample32));
-			}
-			// inform the host that this bus is silent
-			data.outputs[i].silenceFlags = ((uint64)1 << data.outputs[i].numChannels) - 1;
-		}
-	}
+	}*/
 
 	return kResultOk;
 }
