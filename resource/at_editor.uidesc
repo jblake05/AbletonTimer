@@ -26,6 +26,7 @@
 				}
 			]
 		},
+		"control-tags": {},
 		"custom": {
 			"FocusDrawing": {},
 			"VST3Editor": {
@@ -51,7 +52,23 @@
 			},
 			"UIAttributesController": {},
 			"UIViewCreatorDataSource": {
-				"SelectedRow": "13"
+				"FilterString": "string",
+				"SelectedRow": "0"
+			},
+			"UITagsDataSource": {
+				"SelectedRow": "-1"
+			},
+			"UIColorsDataSource": {
+				"SelectedRow": "-1"
+			},
+			"UIGradientsDataSource": {
+				"SelectedRow": "-1"
+			},
+			"UIBitmapsDataSource": {
+				"SelectedRow": "-1"
+			},
+			"UIFontsDataSource": {
+				"SelectedRow": "-1"
 			}
 		},
 		"templates": {
@@ -68,42 +85,29 @@
 					"wants-focus": "false"
 				},
 				"children": {
-					"CMultiLineTextLabel": {
+					"CStringListControl": {
 						"attributes": {
-							"auto-height": "false",
-							"back-color": "~ BlackCColor",
-							"background-offset": "0, 0",
-							"class": "CMultiLineTextLabel",
+							"back-color": "~ WhiteCColor",
+							"back-color-selected": "~ BlueCColor",
+							"class": "CStringListControl",
 							"default-value": "0.5",
 							"font": "~ NormalFont",
-							"font-antialias": "true",
-							"font-color": "~ WhiteCColor",
-							"frame-color": "~ BlackCColor",
-							"frame-width": "1",
-							"line-layout": "clip",
+							"font-color": "~ BlackCColor",
+							"font-color-selected": "~ WhiteCColor",
+							"hover-color": "#00000064",
+							"line-color": "~ BlackCColor",
+							"line-width": "1",
 							"max-value": "1",
 							"min-value": "0",
 							"mouse-enabled": "true",
 							"opacity": "1",
-							"origin": "100, 100",
-							"round-rect-radius": "6",
-							"shadow-color": "~ RedCColor",
-							"size": "100, 100",
-							"style-3D-in": "false",
-							"style-3D-out": "false",
-							"style-no-draw": "false",
-							"style-no-frame": "false",
-							"style-no-text": "false",
-							"style-round-rect": "false",
-							"style-shadow-text": "false",
-							"text-alignment": "center",
-							"text-inset": "0, 0",
-							"text-rotation": "0",
-							"text-shadow-offset": "1, 1",
-							"title": "test\\ngrub",
+							"origin": "120, 170",
+							"row-height": "12",
+							"size": "100, 24",
+							"style-hover": "true",
+							"text-alignment": "left",
+							"text-inset": "5",
 							"transparent": "false",
-							"value-precision": "2",
-							"vertical-centered": "false",
 							"wants-focus": "false",
 							"wheel-inc-value": "0.1"
 						}

@@ -1,5 +1,5 @@
-﻿  Generating VST3/Debug/AbletonTimer.vst3/Contents/Resources/at_editor.uidesc
-  [SMTG] Copied C:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/resource/at_editor.uidesc to C:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/build/VST3/Debug/AbletonTimer.vst3/Contents/Resources/at_editor.uidesc
+﻿  at_controller.cpp
+  at_entry.cpp
   AbletonTimer.vcxproj -> C:\Users\Jeff\Desktop\Audio Programming\AbletonTimer\build\VST3\Debug\AbletonTimer.vst3\Contents\x86_64-win\AbletonTimer.vst3
   Copies storage file to VST dir
   C:\Users\Jeff\Desktop\Audio Programming\AbletonTimer\build\time.txt

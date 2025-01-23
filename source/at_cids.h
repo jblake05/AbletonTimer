@@ -14,5 +14,10 @@ static const Steinberg::FUID kAbletonTimerControllerUID (0x2C0C2463, 0x94DF57FF,
 
 #define AbletonTimerVST3Category "Fx"
 
+// parameter tags
+enum {
+	kTimerId
+};
+
 //------------------------------------------------------------------------
 } // namespace MyCompanyName
