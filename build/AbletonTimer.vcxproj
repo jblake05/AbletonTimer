@@ -441,9 +441,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Name>vstgui_uidescription</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Text Include="..\source\time.txt" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

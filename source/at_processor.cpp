@@ -8,6 +8,10 @@
 #include "base/source/fstreamer.h"
 #include "pluginterfaces/vst/ivstparameterchanges.h"
 
+#include <fstream>
+#include <iostream>
+#include <string>
+
 using namespace Steinberg;
 
 namespace MyCompanyName {
@@ -66,20 +70,59 @@ tresult PLUGIN_API AbletonTimerProcessor::setActive (TBool state)
 	//--- called when the Plug-in is enable/disable (On/Off) -----
 	return AudioEffect::setActive (state);
 }
+struct time {
+	int hour;
+	int minute;
+	int second;
+};
+
+static struct time secondToTime(double second) {
+	int hr = (int) (second / 3600);
+
+	second = fmod(second, 3600);
+
+	int min = (int) (second / 60);
+
+	second = fmod(second, 60);
+
+	int sec = (int)(second);
+
+	struct time result = {
+		hr,
+		min,
+		sec
+	};
+
+	return result;
+}
 
 //------------------------------------------------------------------------
 tresult PLUGIN_API AbletonTimerProcessor::process (Vst::ProcessData& data)
 {
 	// read file:
+	std::fstream f("./time.txt");
+	
+	if (!f.is_open()) {
+		std::cerr << "Time file couldn't open!";
+		return -1;
+	}
 
-	// add data.numSamples/sampleRate to fracSeconds:
+	std::string time;
+	std::getline(f, time);
 
-	// modulos/remainders:
+	double secs = std::stod(time);
 
-	// write file:
-	/*for (int s = 0; s < data.numSamples; s++) {
-		
-	}*/
+	//struct time disp = secondToTime(secs);
+
+	double fracSeconds = data.numSamples / this->processSetup.sampleRate;
+
+	std::string newTime = std::to_string(secs + fracSeconds);
+
+	f << newTime;
+
+	f.close();
+
+	// may need to transfer buffer over (in to out)
 
 	return kResultOk;
 }

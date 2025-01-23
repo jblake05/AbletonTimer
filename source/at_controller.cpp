@@ -14,7 +14,7 @@
 //#include <public.sdk/source/vst/vstnoteexpressiontypes.h>
 //#include <public.sdk/source/vst/utility/sampleaccurate.h>
 //#include <processthreadsapi.h>
-#include "vst"
+//#include "vst"
 
 using namespace Steinberg;
 
@@ -34,11 +34,12 @@ namespace MyCompanyName {
 			return result;
 		}
 
-		Vst::Parameter* param;
+		//auto* param;
 
-		param = new Vst::StringListParameter(USTRING("Timer"), kTimerId, nullptr, Vst::ParameterInfo::kIsReadOnly, 0, nullptr);
+		auto* param = new Vst::StringListParameter(USTRING("Timer"), kTimerId, nullptr, Vst::ParameterInfo::kIsReadOnly, 0, nullptr);
+		param->appendString(USTRING("TestGar"));
 
-			//parameters.addParameter(param);
+		parameters.addParameter(param);
 
 		// -> Vst::EditController::parameters.addParameter(param);
 		return result;

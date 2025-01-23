@@ -1,5 +1,5 @@
-﻿  at_controller.cpp
-  at_entry.cpp
+﻿  at_processor.cpp
+     Creating library C:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/build/lib/Debug/AbletonTimer.lib and object C:/Users/Jeff/Desktop/Audio Programming/AbletonTimer/build/lib/Debug/AbletonTimer.exp
   AbletonTimer.vcxproj -> C:\Users\Jeff\Desktop\Audio Programming\AbletonTimer\build\VST3\Debug\AbletonTimer.vst3\Contents\x86_64-win\AbletonTimer.vst3
   Copies storage file to VST dir
   C:\Users\Jeff\Desktop\Audio Programming\AbletonTimer\build\time.txt

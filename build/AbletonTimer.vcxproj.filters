@@ -54,9 +54,4 @@
       <UniqueIdentifier>{26FC038A-D3EC-3398-9832-B699C2DFF0C0}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
-  <ItemGroup>
-    <Text Include="..\source\time.txt">
-      <Filter>Source Files</Filter>
-    </Text>
-  </ItemGroup>
 </Project>

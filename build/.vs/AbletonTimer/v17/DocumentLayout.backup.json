@@ -3,16 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\Jeff\\Desktop\\Audio Programming\\AbletonTimer\\build\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{19F33D15-9BC7-3D17-9853-D60DD3CDCC56}|AbletonTimer.vcxproj|C:\\Users\\Jeff\\Desktop\\Audio Programming\\AbletonTimer\\source\\at_controller.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{19F33D15-9BC7-3D17-9853-D60DD3CDCC56}|AbletonTimer.vcxproj|C:\\Users\\Jeff\\Desktop\\Audio Programming\\AbletonTimer\\source\\at_processor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19F33D15-9BC7-3D17-9853-D60DD3CDCC56}|AbletonTimer.vcxproj|C:\\Users\\Jeff\\Desktop\\Audio Programming\\AbletonTimer\\source\\at_cids.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{19F33D15-9BC7-3D17-9853-D60DD3CDCC56}|AbletonTimer.vcxproj|C:\\Users\\Jeff\\Desktop\\Audio Programming\\AbletonTimer\\source\\at_processor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{19F33D15-9BC7-3D17-9853-D60DD3CDCC56}|AbletonTimer.vcxproj|C:\\Users\\Jeff\\Desktop\\Audio Programming\\AbletonTimer\\source\\at_controller.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19F33D15-9BC7-3D17-9853-D60DD3CDCC56}|AbletonTimer.vcxproj|C:\\Users\\Jeff\\Desktop\\Audio Programming\\AbletonTimer\\source\\at_processor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{19F33D15-9BC7-3D17-9853-D60DD3CDCC56}|AbletonTimer.vcxproj|C:\\Users\\Jeff\\Desktop\\Audio Programming\\AbletonTimer\\source\\at_controller.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19F33D15-9BC7-3D17-9853-D60DD3CDCC56}|AbletonTimer.vcxproj|C:\\Users\\Jeff\\Desktop\\Audio Programming\\AbletonTimer\\source\\at_cids.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,24 +25,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "at_processor.cpp",
+              "DocumentMoniker": "C:\\Users\\Jeff\\Desktop\\Audio Programming\\AbletonTimer\\source\\at_processor.cpp",
+              "RelativeDocumentMoniker": "..\\source\\at_processor.cpp",
+              "ToolTip": "C:\\Users\\Jeff\\Desktop\\Audio Programming\\AbletonTimer\\source\\at_processor.cpp",
+              "RelativeToolTip": "..\\source\\at_processor.cpp",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAHIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-22T19:18:28.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "at_cids.h",
               "DocumentMoniker": "C:\\Users\\Jeff\\Desktop\\Audio Programming\\AbletonTimer\\source\\at_cids.h",
               "RelativeDocumentMoniker": "..\\source\\at_cids.h",
               "ToolTip": "C:\\Users\\Jeff\\Desktop\\Audio Programming\\AbletonTimer\\source\\at_cids.h",
               "RelativeToolTip": "..\\source\\at_cids.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-22T00:10:24.688Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-22T00:10:24.688Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "at_processor.h",
               "DocumentMoniker": "C:\\Users\\Jeff\\Desktop\\Audio Programming\\AbletonTimer\\source\\at_processor.h",
               "RelativeDocumentMoniker": "..\\source\\at_processor.h",
@@ -65,13 +80,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "at_controller.cpp",
               "DocumentMoniker": "C:\\Users\\Jeff\\Desktop\\Audio Programming\\AbletonTimer\\source\\at_controller.cpp",
               "RelativeDocumentMoniker": "..\\source\\at_controller.cpp",
               "ToolTip": "C:\\Users\\Jeff\\Desktop\\Audio Programming\\AbletonTimer\\source\\at_controller.cpp",
               "RelativeToolTip": "..\\source\\at_controller.cpp",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAwwCcAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-19T05:03:04.25Z",
               "EditorCaption": ""
